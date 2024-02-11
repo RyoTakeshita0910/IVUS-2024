@@ -109,6 +109,8 @@ def main():
     media_list = sorted(os.listdir(args.media_dir))
     wire_list = sorted(os.listdir(args.wire_dir))
 
+    if not os.path.isdir(args.dest_dir):
+        os.mkdir(args.dest_dir)
 
     otsu_path = os.path.join(args.dest_dir,"otsu")
     if not os.path.isdir(otsu_path):
