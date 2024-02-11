@@ -6,7 +6,7 @@
 python LMW_to_IBIVUS_input.py --lumen_dir ~/path/lumen --media_dir ~/path/media --wire_dir ~/path/wire --img_dir ~path/IVUS --dest_dir ~path/output
 ```
 ### 動作の処理
-1 Lumen, Media, Wireに大津の二値化とラベル削除を施し、マスク画像を生成・保存<br>
-2 Lumen, Media, Wireから血管壁のマスク画像を生成<br>
-3 IVUS画像に血管壁のマスク画像を適用し，血管壁のIVUS画像を生成・保存<br>
+1. Lumen, Media, Wireに大津の二値化とラベル削除を施し、マスク画像を生成・保存<br>
+2. Lumen, Media, Wireから血管壁のマスク画像を生成<br>
+3. IVUS画像に血管壁のマスク画像を適用し，血管壁のIVUS画像を生成・保存<br>
 
