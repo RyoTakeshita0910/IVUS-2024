@@ -13,10 +13,10 @@ import cv2
 
 # For parsing commandline arguments
 parser = argparse.ArgumentParser()
-parser.add_argument("--lumen_dir", type=str, required=True, help='path to the folder containing origial pngs')
-parser.add_argument("--media_dir", type=str, required=True, help='path to the folder containing origial pngs')
-parser.add_argument("--wire_dir", type=str, required=True, help='path to the folder containing origial pngs')
-parser.add_argument("--img_dir", type=str, required=True, help='path to the folder containing origial pngs')
+parser.add_argument("--lumen_dir", type=str, required=True, help='path to the folder containing Lumen pngs')
+parser.add_argument("--media_dir", type=str, required=True, help='path to the folder containing Media pngs')
+parser.add_argument("--wire_dir", type=str, required=True, help='path to the folder containing Wire pngs')
+parser.add_argument("--img_dir", type=str, required=True, help='path to the folder containing IVUS pngs')
 parser.add_argument("--dest_dir", type=str, required=True, help='path to the output dataset folder')
 args = parser.parse_args()
 
