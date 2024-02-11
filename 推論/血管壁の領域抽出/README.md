@@ -14,5 +14,11 @@ python LMW_to_IBIVUS_input.py --lumen_dir ~/path/lumen --media_dir ~/path/media 
 ====================================================================
 <br>
 
-## 各領域の抽出精度の評価：
+## 各領域の抽出精度の評価：eval_pred_LMW.py
 深層学習で出力した各領域のマスク画像の抽出精度を評価する
+### 実行方法
+```bash
+python eval_pred_LMW.py --eval_dir ~/path/prediction/mask --gt_dir ~/path/ground-truth/mask --out_csv ~/path/output/csv
+```
+### 動作の処理
+1. LMW_to_IBIVUS_iput.pyで生成したLumenやMediaやWireのマスク画像を入力し，
