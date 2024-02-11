@@ -21,4 +21,6 @@ python LMW_to_IBIVUS_input.py --lumen_dir ~/path/lumen --media_dir ~/path/media 
 python eval_pred_LMW.py --eval_dir ~/path/prediction/mask --gt_dir ~/path/ground-truth/mask --out_csv ~/path/output/csv
 ```
 ### 動作の処理
-1. LMW_to_IBIVUS_iput.pyで生成したLumenやMediaやWireのマスク画像を入力し，
+1. LMW_to_IBIVUS_iput.pyで生成したLumenやMediaやWireのマスク画像と正解のマスク画像を読み込む<br>
+2. Jaccard係数とHausdorff距離の計算<br>
+3. 計算結果をcsvで出力<br>
