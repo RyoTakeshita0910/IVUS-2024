@@ -1,13 +1,8 @@
 import argparse
 import os
 import os.path
-import ctypes
 from shutil import rmtree, move
-from PIL import Image
 import numpy as np
-import matplotlib.pyplot as plt
-from natsort import natsorted
-import seaborn as sns
 import time
 import cv2
 from monai.metrics import compute_meaniou, compute_hausdorff_distance
