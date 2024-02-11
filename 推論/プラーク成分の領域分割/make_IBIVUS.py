@@ -19,11 +19,12 @@ args = parser.parse_args()
 h = 512
 w = 512
 
-# 各プラークのクラス番号と画素値(確信度)の統合
+# 各プラーク成分のマスク画像の統合
 def set_info(img,info,class_num):
     for y in range(h):
         for x in range(w):
             img_c = img[y][x]
+            # 画素値が高いプラーク成分を優先
             if info[y][x][1] <= img_c:
                 info[y][x][0] = class_num
                 info[y][x][1] = img_c
@@ -169,10 +170,12 @@ def main():
         # 深層学習から出力された各プラーク成分のマスク画像の情報を統合するリスト
         seg_info = np.zeros((512,512,2)) # (y,x,[色のクラス,画素値])
         print(img)
+        # 全てのプラーク成分のマスク画像から情報を統合
         for c in range(0,6):
             src_img = cv2.imread(os.path.join(args.input_dir, str(c), img), cv2.IMREAD_GRAYSCALE)
             seg_info = set_info(src_img, seg_info, c)
 
+        # 統合した情報からIB-IVUS画像を生成
         seg_img = set_seg(seg_info, img)
         cv2.imwrite(os.path.join(args.dest_dir, img), seg_img)
         
