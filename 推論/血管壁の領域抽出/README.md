@@ -10,6 +10,9 @@ python LMW_to_IBIVUS_input.py --lumen_dir ~/path/lumen --media_dir ~/path/media 
 2. Lumen, Media, Wireから血管壁のマスク画像を生成<br>
 3. IVUS画像に血管壁のマスク画像を適用し，血管壁のIVUS画像を生成・保存<br>
 
+<br>
+====================================================================
+<br>
 
 ## 各領域のの抽出精度の評価：
 深層学習で出力した各領域のマスク画像の抽出精度を評価する
