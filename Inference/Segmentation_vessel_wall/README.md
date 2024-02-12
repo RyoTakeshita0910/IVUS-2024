@@ -5,7 +5,7 @@
 ```bash
 python LMW_to_IBIVUS_input.py --lumen_dir ~/path/lumen --media_dir ~/path/media --wire_dir ~/path/wire --img_dir ~path/IVUS --dest_dir ~path/output
 ```
-### 動作の処理
+### 動作
 1. Lumen, Media, Wireに大津の二値化とラベル削除を施し、マスク画像を生成・保存<br>
 2. Lumen, Media, Wireから血管壁のマスク画像を生成<br>
 3. IVUS画像に血管壁のマスク画像を適用し，血管壁のIVUS画像を生成・保存<br>
@@ -20,7 +20,7 @@ python LMW_to_IBIVUS_input.py --lumen_dir ~/path/lumen --media_dir ~/path/media 
 ```bash
 python eval_pred_LMW.py --eval_dir ~/path/prediction/mask --gt_dir ~/path/ground-truth/mask --out_csv ~/path/output/csv
 ```
-### 動作の処理
+### 動作
 1. LMW_to_IBIVUS_iput.pyで生成したLumenやMediaやWireのマスク画像と正解のマスク画像を読み込む<br>
 2. Jaccard係数とHausdorff距離の計算<br>
 3. 計算結果をcsvで出力<br>
