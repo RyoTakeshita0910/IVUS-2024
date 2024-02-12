@@ -38,23 +38,6 @@ python make_patch_IBIVUS.py --img_dir ~/path/IB-IVUS --dest_dir ~/path/output --
 
 <br>
 
-### 結果例
-・各画像のフォルダが形成され、そのフォルダに全てのパッチ画像が保存される
-```bash
-dest_dir
-├── <image name1>
-│   ├── (image name1)_000-000.png
-│   ├── (image name1)_000-001.png
-│   ├── ...
-│   └── (image name1)_015-015.png
-│   
-├── <image name2>
-│   ├── (image name2)_000-000.png
-│   ├── (image name2)_000-000.png
-│   ├── ...
-│   └── (image name2)_015-015.png
-│    
-```
 ・パッチ画像は以下の表のように割り当てられる<br>
 
 |パッチ画像|割り当てるクラス|
@@ -83,6 +66,24 @@ dest_dir
 |線維状組織(正常な組織)|緑(Green)|2|
 |軽度の脂質|青(Blue)|1|
 |重度の脂質|紫(Purple)|3|
+
+### 結果例
+・各画像のフォルダが形成され、そのフォルダに全てのパッチ画像が保存される
+```bash
+dest_dir
+├── <image name1>
+│   ├── (image name1)_000-000.png
+│   ├── (image name1)_000-001.png
+│   ├── ...
+│   └── (image name1)_015-015.png
+│   
+├── <image name2>
+│   ├── (image name2)_000-000.png
+│   ├── (image name2)_000-000.png
+│   ├── ...
+│   └── (image name2)_015-015.png
+│    
+```
 
 <br>
 ============================================================================================
