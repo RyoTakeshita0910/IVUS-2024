@@ -31,3 +31,16 @@ python eval_pred_LMW.py --eval_dir ~/path/prediction/mask --gt_dir ~/path/ground
 1. LMW_to_IBIVUS_iput.pyで生成したLumenやMediaやWireのマスク画像と正解のマスク画像を読み込む<br>
 2. Jaccard係数とHausdorff距離の計算<br>
 3. 計算結果をcsvで出力<br>
+
+
+### 結果例
+・csvに各画像のJaccard係数とHausdorff距離の計算結果が保存される
+|img_name|IoU|Hausdorff_distance|
+|---|---|---|
+|0001_03492907_000001|0.928185999|5.656854249|
+|0001_03492907_000061|0.893295109|8|
+|0001_03492907_000121|0.879259348|8.94427191|
+|0001_03492907_000181|0.918669999|8.602325267|
+|...|...|...|
+|ave|...|...|
+

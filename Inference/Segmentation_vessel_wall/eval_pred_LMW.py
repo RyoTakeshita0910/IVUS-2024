@@ -69,7 +69,8 @@ def main():
         writer.writerow(['img_name', 'IoU', 'Hausdorff_distance'])
         for i in range(len(file_list)):
             writer.writerow([file_list[i], iou_list[i], hd_list[i]])
-        writer.writerow(['', ave_iou, ave_hd])
+        writer.writerow([''])
+        writer.writerow(['ave', ave_iou, ave_hd])
 
 main()
 
