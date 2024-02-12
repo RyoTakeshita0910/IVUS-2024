@@ -44,6 +44,7 @@ python make_patch_IBIVUS.py --img_dir ~/path/IB-IVUS --dest_dir ~/path/output --
 <br>
 
 |パッチ画像|割り当てるクラス|
+|---|---|
 |背景のみ|背景クラス|
 |背景を含まない|最も面積の大きいプラーク成分のクラス|
 |背景を含む|背景を除く、最も面積の大きいプラーク成分のクラス|
