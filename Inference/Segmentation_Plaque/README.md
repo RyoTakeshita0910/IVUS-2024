@@ -18,6 +18,7 @@ python make_IB_IVUS.py --input_dir ~/path/all/plaque/mask --lumen_dir ~/path/lum
 |IB-IVUS画像|
 
 ----
+<br>
 
 ## IB-IVUS画像のパッチ画像の作成とクラスの割り当て：make_patch_IBIVUS.py
 正解のIB-IVUS画像と深層学習によって生成したIB-IVUS画像からパッチ画像を作成し，プラーク成分の分類精度の評価に用いる
@@ -94,6 +95,7 @@ dest_dir
 
 
 ----
+<br>
 
 ## 生成したIB-IVUS画像のプラーク成分の分類精度評価：eval_patch_IBIVUS.py
 make_patch_IBIVUS.pyで生成したcsvを元に、各プラーク成分の正解クラスと予測クラスの一致率を計算
