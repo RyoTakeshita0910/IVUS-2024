@@ -70,7 +70,16 @@ dest_dir
 |<img src="https://github.com/RyoTakeshita0910/IVUS-2024/assets/104045526/1e44298c-8f56-4ac0-b751-7abf03511c47.png" width="256" height="256">|<img src="https://github.com/RyoTakeshita0910/IVUS-2024/assets/104045526/16b7e10a-b0d8-4fb3-b5cb-9cf6695946e7.png" width="256" height="256">|<img src="https://github.com/RyoTakeshita0910/IVUS-2024/assets/104045526/a3aca23f-407c-411a-b308-e996718e2fde.png" width="256" height="256">|
 |背景のみ|背景を含まない|背景を含む|
 
-
+<br>
+・各クラスは数字で割り当てられる
+|クラス|プラーク成分|クラス番号|
+|---|---|---|
+|背景|黒・白|0|
+|重度の石灰化|赤|4|
+|軽度の石灰化|黄|5|
+|線維状組織(正常な組織)|緑|2|
+|軽度の脂質|青|1|
+|重度の脂質|紫|3|
 
 <br>
 ============================================================================================
