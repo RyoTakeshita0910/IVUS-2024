@@ -17,8 +17,6 @@ python LMW_to_IBIVUS_input.py --lumen_dir ~/path/lumen --media_dir ~/path/media 
 |---|---|---|---|
 |Lumen|Media|Wire|IB-IVUS_input|
 
-<br>
-
 ----
 <br>
 
