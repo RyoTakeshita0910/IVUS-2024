@@ -131,7 +131,7 @@ python eval_patch_IBIVUS.py --eval_csv ~/path/csv file/prediction --gt_csv ~/pat
 
 ||予測|Black|Red|Yellow|Green|Blue|Purple|
 |---|---|---|---|---|---|---|---|
-|**正解**|Black|-|3|4|2|1|2|
+|**正解**|**Black**|-|3|4|2|1|2|
 ||**Red**|-|1000|50|0|0|0|
 ||**Yellow**|-|200|800|0|0|0|
 ||**Green**|-|100|200|25000|600|0|
