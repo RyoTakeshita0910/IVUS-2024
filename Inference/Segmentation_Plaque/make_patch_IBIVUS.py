@@ -3,25 +3,17 @@ import os
 import os.path
 import ctypes
 from shutil import rmtree, move
-from PIL import Image
 import numpy as np
-import matplotlib.pyplot as plt
-from natsort import natsorted
 import seaborn as sns
-import time
 import cv2
 import csv
 
 # For parsing commandline arguments
 parser = argparse.ArgumentParser()
-parser.add_argument("--img_dir", type=str, required=True, help='path to the folder containing origial pngs')
-parser.add_argument("--dest_dir", type=str, required=True, help='path to the folder containing origial pngs')
-parser.add_argument("--csv_name", type=str, required=True, help='path to the output dataset folder')
+parser.add_argument("--img_dir", type=str, required=True, help='path to the folder containing IB-IVUS pngs')
+parser.add_argument("--dest_dir", type=str, required=True, help='path to the output dataset folder')
+parser.add_argument("--csv_name", type=str, required=True, help='path to the output csv file name')
 args = parser.parse_args()
-
-all_dict = {}
-for i in range(6):
-    all_dict[i] = 0
 
 # image size
 h = 512
@@ -31,6 +23,7 @@ w = 512
 ph = 32
 pw = 32
 
+# パッチ画像のクラス分け
 def check_color(img):
     c_dict = {}
     for i in range(6):
@@ -40,7 +33,7 @@ def check_color(img):
         for x in range(pw):
             img_c = img[y][x]
 
-            # black or white
+            # black or white：背景
             if all(img_c == [0,0,0]) or all(img_c == [255,255,255]):
                 c_dict[0] += 1
 
@@ -66,15 +59,15 @@ def check_color(img):
 
     out_c = 0
     c_max = 0
+    # 最も面積の大きいプラーク成分のクラスを割り振る
     for i in range(5):
         if c_max < c_dict[i+1]:
             out_c = i+1
             c_max = c_dict[i+1]
-    
-    all_dict[out_c] += 1
 
     return out_c
 
+# パッチ画像の生成
 def pick_patch(img,img_name):
     dest_dir = os.path.join(args.dest_dir,img_name)
     if not os.path.isdir(dest_dir):
@@ -101,6 +94,7 @@ def main():
     img_list = sorted(os.listdir(args.img_dir))
 
     out_list = []
+    # 全ての入力画像のパッチ画像を作成
     for img in img_list:
         img_name = img.split('.')[0]
         print(img_name)
@@ -108,22 +102,16 @@ def main():
         img_class = pick_patch(in_img,img_name)
         out_list.append(img_class)
     
+    # クラス分けされたパッチ画像の情報をcsvに保存
     column_row = ['img_name']
     for yp in range(int(h/ph)):
         for xp in range(int(w/pw)):
             column_row.append('{:03}-{:03}'.format(yp,xp))
-    
-    print(all_dict)
-
     with open(os.path.join(args.dest_dir,args.csv_name), 'w', newline = '') as f:
         writer = csv.writer(f)
         writer.writerow(column_row)
         for out in out_list:
             writer.writerow(out)
-        
-        # writer.writerow([''])
-        # writer.writerow(['Black', 'Blue', 'Green', 'Purple', 'Red', 'Yellow'])
-        # writer.writerow([all_dict[0], all_dict[1], all_dict[2], all_dict[3], all_dict[4], all_dict[5]])
 
 main()
 
