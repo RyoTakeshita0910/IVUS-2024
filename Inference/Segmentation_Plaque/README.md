@@ -113,8 +113,8 @@ python eval_patch_IBIVUS.py --eval_csv ~/path/csv file/prediction --gt_csv ~/pat
 3. 予測クラスと正解クラスの一致率を計算し、結果をcsvに保存<br>
 
 ### 結果例
-・正解クラスと予測クラスの一致率を混同行列でcsvに保存される
-・x軸方向は予測クラス、y軸方向は正解クラスを表す
+・正解クラスと予測クラスの一致率を混同行列でcsvに保存される<br>
+・x軸方向は予測クラス、y軸方向は正解クラスを表す<br>
 |Black|Blue|Green|Purple|Red|Yellow|
 |---|---|---|---|---|---|
 |0|1|2|2|3|4|
