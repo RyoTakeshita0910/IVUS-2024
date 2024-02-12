@@ -42,9 +42,9 @@ python make_patch_IBIVUS.py --img_dir ~/path/IB-IVUS --dest_dir ~/path/output --
 
 
 
-|![0002_4720237_000961_008-007](https://github.com/RyoTakeshita0910/IVUS-2024/assets/104045526/1e44298c-8f56-4ac0-b751-7abf03511c47)|![0002_4720237_000961_008-009](https://github.com/RyoTakeshita0910/IVUS-2024/assets/104045526/16b7e10a-b0d8-4fb3-b5cb-9cf6695946e7)|![0002_4720237_000961_009-008](https://github.com/RyoTakeshita0910/IVUS-2024/assets/104045526/a3aca23f-407c-411a-b308-e996718e2fde)|
+|<img src="https://github.com/RyoTakeshita0910/IVUS-2024/assets/104045526/1e44298c-8f56-4ac0-b751-7abf03511c47.png" width="100" height="100">|![0002_4720237_000961_008-009](https://github.com/RyoTakeshita0910/IVUS-2024/assets/104045526/16b7e10a-b0d8-4fb3-b5cb-9cf6695946e7)|![0002_4720237_000961_009-008](https://github.com/RyoTakeshita0910/IVUS-2024/assets/104045526/a3aca23f-407c-411a-b308-e996718e2fde)|
 |---|---|---|
-|パッチ画像の例|
+||パッチ画像の例||
 
 
 
