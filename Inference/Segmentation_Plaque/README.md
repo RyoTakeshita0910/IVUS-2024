@@ -13,7 +13,9 @@ python make_IB_IVUS.py --input_dir ~/path/all/plaque/mask --lumen_dir ~/path/lum
 5. 1~4の結果を統合してIB-IVUS画像を生成<br>
 
 ### 結果例
-![0001_03492907_000001](https://github.com/RyoTakeshita0910/IVUS-2024/assets/104045526/0a7056b6-ba33-4686-9caf-44f3f4f00c42)
+|![0001_03492907_000001](https://github.com/RyoTakeshita0910/IVUS-2024/assets/104045526/0a7056b6-ba33-4686-9caf-44f3f4f00c42)|
+|---|
+|IB-IVUS画像|
 
 
 <br>
