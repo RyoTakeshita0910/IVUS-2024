@@ -9,14 +9,9 @@ python LMW_to_IBIVUS_input.py --lumen_dir ~/path/lumen --media_dir ~/path/media 
 1. Lumen, Media, Wireに大津の二値化とラベル削除を施し、マスク画像を生成・保存<br>
 2. Lumen, Media, Wireから血管壁のマスク画像を生成<br>
 3. IVUS画像に血管壁のマスク画像を適用し，血管壁のIVUS画像を生成・保存<br>
-![0001_03492907_000001](https://github.com/RyoTakeshita0910/IVUS-2024/assets/104045526/eee15330-a28e-4379-b763-0d5e475d7c73)
-![0001_03492907_000001](https://github.com/RyoTakeshita0910/IVUS-2024/assets/104045526/78de4974-b3d3-4492-a486-2dca4b6491e2)
-![0001_03492907_000001](https://github.com/RyoTakeshita0910/IVUS-2024/assets/104045526/21cde1f7-4a18-4969-a108-a844213d05fe)
-![0001_03492907_000001](https://github.com/RyoTakeshita0910/IVUS-2024/assets/104045526/5a9bf9b6-1a79-492d-bea6-4c3a86ee42b1)
-
 
 ### 結果例
-|
+|![0001_03492907_000001](https://github.com/RyoTakeshita0910/IVUS-2024/assets/104045526/eee15330-a28e-4379-b763-0d5e475d7c73)|![0001_03492907_000001](https://github.com/RyoTakeshita0910/IVUS-2024/assets/104045526/78de4974-b3d3-4492-a486-2dca4b6491e2)|![0001_03492907_000001](https://github.com/RyoTakeshita0910/IVUS-2024/assets/104045526/21cde1f7-4a18-4969-a108-a844213d05fe)|![0001_03492907_000001](https://github.com/RyoTakeshita0910/IVUS-2024/assets/104045526/5a9bf9b6-1a79-492d-bea6-4c3a86ee42b1)|
 |---|---|---|---|
 |Lumen|Media|Wire|IB-IVUS_input|
 
