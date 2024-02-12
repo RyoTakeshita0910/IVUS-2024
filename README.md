@@ -3,10 +3,10 @@
 ## 前処理
 
 ## 推論(Inference)
-### Segmentation vessel wall
+### 血管壁の領域抽出(Segmentation vessel wall)
 
 
 
 
-### Segmentation Plaque
+### プラーク成分の領域分割(Segmentation Plaque)
 
