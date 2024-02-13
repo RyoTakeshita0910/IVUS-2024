@@ -8,16 +8,15 @@ import numpy as np
 import matplotlib.pyplot as plt
 from natsort import natsorted
 import seaborn as sns
-import time
 import cv2
 import csv
 
 # For parsing commandline arguments
 parser = argparse.ArgumentParser()
-parser.add_argument("--eval_csv", type=str, required=True, help='path to the output dataset folder')
-parser.add_argument("--gt_csv", type=str, required=True, help='path to the output dataset folder')
-parser.add_argument("--out_csv", type=str, required=True, help='path to the output dataset folder')
-parser.add_argument("--thrs", type=float, default=0.55, help='path to the folder containing origial pngs')
+parser.add_argument("--eval_csv", type=str, required=True, help='path to the prediction lipid rate csv')
+parser.add_argument("--gt_csv", type=str, required=True, help='path to the ground-truth lipid rate csv')
+parser.add_argument("--out_csv", type=str, required=True, help='path to the output csv')
+parser.add_argument("--thrs", type=float, default=0.55, help='path to the thrershold of lipid rate')
 args = parser.parse_args()
 
 
@@ -31,7 +30,6 @@ def judge_bg(bp):
 
 def main():
     
-
     eval_list = []
     with open(args.eval_csv) as f:
         reader = csv.reader(f)
