@@ -13,7 +13,7 @@ python calc_lipid_rate_IBIVUS.py --img_dir ~/path/IB-IVUS --out_csv ~/path/outpu
 
 ### 結果例
 - 画像のファイル名と脂質プラークの割合が保存される
-- 出力したcsvには、カラム名がないことに注意(以下の表は例)
+- 出力したcsvには、**カラム名がない**ことに注意(以下の表は例)
 <br>
 
 |(img_name)|(lipid_rate)|
