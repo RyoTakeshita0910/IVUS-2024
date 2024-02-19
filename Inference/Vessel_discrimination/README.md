@@ -92,5 +92,9 @@ python make_roc_IVUS.py --eval_csv ~/path/prediction/lipid rate/csv --gt_csv ~/p
 4. AUCを計算し、csvに保存
 
 ### 結果例
-![Lipid_Nested8_best_fold4](https://github.com/RyoTakeshita0910/IVUS-2024/assets/104045526/22141c76-d3ed-4235-a438-41b373bebf39)
+
+|ROC曲線|
+|---|
+|<img src="https://github.com/RyoTakeshita0910/IVUS-2024/assets/104045526/22141c76-d3ed-4235-a438-41b373bebf39.png" width="350" height="350">|
+
 
