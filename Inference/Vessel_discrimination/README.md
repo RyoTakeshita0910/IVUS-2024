@@ -92,9 +92,24 @@ python make_roc_IVUS.py --eval_csv ~/path/prediction/lipid rate/csv --gt_csv ~/p
 4. AUCを計算し、csvに保存
 
 ### 結果例
+- ROCグラフの結果
 
 |ROC曲線|
 |---|
 |<img src="https://github.com/RyoTakeshita0910/IVUS-2024/assets/104045526/22141c76-d3ed-4235-a438-41b373bebf39.png" width="350" height="350">|
+
+<br>
+
+- 各閾値の感度・特異度とAUCをcsvに保存
+
+|threshold(閾値)|sensitivity(感度)|specificity(特異度)|
+|---|---|---|
+|0|1|1|
+|0.05|1|0.954..|
+|0.1|1|0.920..|
+|...|||
+||||
+|AUC|0.906...||
+
 
 
