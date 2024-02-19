@@ -11,7 +11,7 @@ python calc_lipid_rate_IBIVUS.py --img_dir ~/path/IB-IVUS --out_csv ~/path/outpu
 1. IB-IVUS画像から黒と白以外のピクセル数を計測し、そのうち青と紫のピクセル数が含まれる割合を計算
 2. 脂質プラークの割合をcsvに保存
 
-上記の処理を**正解のIB-IVUS画像と予測したIB-IVUS画像に適用する**<br>
+**※**上記の処理を**正解のIB-IVUS画像と予測したIB-IVUS画像に適用する**<br>
 
 ### 結果例
 - 画像のファイル名と脂質プラークの割合が保存される
