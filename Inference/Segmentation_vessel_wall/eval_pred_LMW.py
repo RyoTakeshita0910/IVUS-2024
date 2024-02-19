@@ -4,7 +4,7 @@ import os.path
 from shutil import rmtree, move
 import numpy as np
 import cv2
-from monai.metrics import compute_meaniou, compute_hausdorff_distance
+from monai.metrics import compute_iou, compute_hausdorff_distance
 import torch
 import csv
 
@@ -48,7 +48,7 @@ def main():
                 gt_tensor = torch.tensor(gt_np, dtype=torch.uint8)
 
                 # Jaccard係数とHausdorff距離の計算
-                iou = compute_meaniou(eval_tensor, gt_tensor)
+                iou = compute_iou(eval_tensor, gt_tensor)
                 hd = compute_hausdorff_distance(eval_tensor, gt_tensor)
 
                 print(float(iou))
