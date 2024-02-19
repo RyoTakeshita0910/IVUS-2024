@@ -78,6 +78,8 @@ python eval_lipid_rate_IBIVUS.py --eval_csv ~/path/prediction/lipid rate/csv --g
 <br>
 
 ## ROC曲線の描画とAUCの算出：make_roc_IVUS.py
+正解と予測の脂質プラークの割合から血管の状態判別に関するROC曲線の描画とAUCの算出をする
 
-
-
+### 実行方法
+```bash
+python 
