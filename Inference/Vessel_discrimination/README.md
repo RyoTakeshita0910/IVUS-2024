@@ -82,4 +82,14 @@ python eval_lipid_rate_IBIVUS.py --eval_csv ~/path/prediction/lipid rate/csv --g
 
 ### 実行方法
 ```bash
-python 
+python make_roc_IVUS.py --eval_csv ~/path/prediction/lipid rate/csv --gt_csv ~/path/ground-truth/lipid rate/csv --dest_dir ~/path/output
+```
+
+### 動作
+1. 正解と予測の脂質プラークの割合のcsvを読み込む
+2. 脂質プラークの割合の閾値を変えながら、真陽性率(感度)、偽陽性率(1-特異度)を計算
+3. ROC曲線を描画し、グラフを保存
+4. AUCを計算し、csvに保存
+
+### 結果例
+
