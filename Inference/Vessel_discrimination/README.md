@@ -71,6 +71,7 @@ python eval_lipid_rate_IBIVUS.py --eval_csv ~/path/prediction/lipid rate/csv --g
 |特異度|0.9302...||||
 ||||||
 |症例|
+|patient_name|gt result|eval result|gt_bad|pred_bad|
 |...|||||
 
 <br>
