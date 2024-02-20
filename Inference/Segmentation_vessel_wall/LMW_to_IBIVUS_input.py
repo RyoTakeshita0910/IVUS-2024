@@ -158,7 +158,7 @@ def main():
 
         # ラベル削除
         w_ret, w_labels, w_stats, _ = cv2.connectedComponentsWithStats(w_otsu)
-        w_cut = pick_label(w_ret, w_labels, w_stats)
+        w_cut = pick_label_wire(w_ret, w_labels, w_stats)
         w_contours, _ = cv2.findContours(w_cut, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
         for i in range(len(w_contours)):
             w_out = cv2.drawContours(w_cut, [w_contours[i]], 0, 255, -1)
