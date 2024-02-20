@@ -39,4 +39,6 @@ pip install -r requirements.txt
 
 ### 3. 血管の状態判別(Vessel discirimination)
 #### 結果解析
-- 
+- 正解と予測のIB-IVUS画像における脂質プラークの割合を算出(calc_lipid_rate_IBIVUS.py)
+- 脂質プラークの割合から血管の状態を判別し、正解と予測の感度・特異度を算出(eval_lipid_rate_IBIVUS.py)
+- 正解と予測の脂質プラークの割合からROC曲線の描画とAUCを算出(make_roc.py)
