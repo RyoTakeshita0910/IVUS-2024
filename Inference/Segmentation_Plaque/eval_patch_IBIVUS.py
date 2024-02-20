@@ -6,8 +6,6 @@ from shutil import rmtree, move
 from PIL import Image
 import numpy as np
 import matplotlib.pyplot as plt
-from natsort import natsorted
-import seaborn as sns
 import time
 import cv2
 import csv

@@ -2,8 +2,6 @@ import argparse
 import os
 import os.path
 import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
 import cv2
 
 # For parsing commandline arguments
