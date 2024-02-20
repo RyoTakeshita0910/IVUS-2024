@@ -1,5 +1,18 @@
 # IVUS-2024
 
+
+## 環境設定
+- anacondaの仮想環境作成
+- pythonのversion >= 3.9
+```bash
+conda create -n IVUS-2024 python=3.9
+```
+
+- ライブラリのインストール
+```bash
+pip install -r requirements.txt
+```
+
 ## 前処理
 
 ## 推論(Inference)
