@@ -9,6 +9,7 @@ conda create -n IVUS-2024 python=3.9
 ```
 
 - ライブラリのインストール
+**※足りないライブラリはその都度インストールしてください**
 ```bash
 pip install -r requirements.txt
 ```
