@@ -14,7 +14,7 @@
 
 ### 
 
-## 各プラークの面積に関する正解と予測の相関関係の評価：make_corr_all_plaque_IBIVUS.py
+## 全プラークの面積に関する正解と予測の相関関係の評価：make_corr_all_plaque_IBIVUS.py
 
 
 ### 
