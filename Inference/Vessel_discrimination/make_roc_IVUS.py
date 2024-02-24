@@ -109,7 +109,7 @@ def main():
         fpr_list.append(fpr)
         # print('感度:',tpr)
         # print('特異度:',(1-fpr))
-        out_list.append([thrs,tpr,fpr])
+        out_list.append([thrs,tpr,1-fpr])
 
     # ROC曲線の描画
     draw(fpr_list, tpr_list, data_name)
