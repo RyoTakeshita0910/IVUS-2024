@@ -49,7 +49,7 @@ python eval_pred_LMW.py --eval_dir ~/path/prediction/mask --gt_dir ~/path/ground
 |...|...|...|
 |ave|...|...|
 
-# addtional：LMW_to_IBIVUS_input.pyの処理をいくつかの段階に分けたプログラム
+# 追加プログラム(addtional)：LMW_to_IBIVUS_input.pyの処理をいくつかの段階に分けたプログラム
 
 
-# image_processing：スライド資料の作成などに使用する用のプログラム
+# 画像加工(image_processing)：スライド資料の作成などに使用する画像を作成するためのプログラム
