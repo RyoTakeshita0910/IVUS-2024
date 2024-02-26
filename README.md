@@ -14,7 +14,11 @@ conda create -n IVUS-2024 python=3.9
 pip install -r requirements.txt
 ```
 
-## 前処理
+## アノテーション(annotation)
+必要に応じて自分で学習用のマスク画像を作成(SAMを使用)
+<br>
+
+## 前処理(Preprocessing)
 学習の前段階で行う画像の処理：データの抜き出しやマスク画像の生成
 <br>
 
