@@ -110,12 +110,12 @@ def main():
             os.mkdir(otsu_path)
             make_dir(otsu_path)
 
-    cut_path = os.path.join(args.dest_dir,"cut")
+    cut_path = os.path.join(args.dest_dir,"mask")
     if not os.path.isdir(cut_path):
             os.mkdir(cut_path)
             make_dir(cut_path)
 
-    print("Lumen Otsu & Cut")
+    print("Lumen Otsu & make Mask")
     for l in lumen_list:
         l_img = cv2.imread(os.path.join(args.lumen_dir,l),cv2.IMREAD_GRAYSCALE)
 
@@ -131,7 +131,7 @@ def main():
             l_out = cv2.drawContours(l_cut, [l_contours[i]], 0, 255, -1)
         cv2.imwrite(os.path.join(cut_path,"Lumen",l), l_out)
 
-    print("Media Otsu & Cut")
+    print("Media Otsu & make Mask")
     for m in media_list:
         m_img = cv2.imread(os.path.join(args.media_dir,m),cv2.IMREAD_GRAYSCALE)
 
@@ -148,7 +148,7 @@ def main():
         cv2.imwrite(os.path.join(cut_path,"Media",m), m_out)
     
 
-    print("Wire Otsu & Cut")
+    print("Wire Otsu & make Mask")
     for w in wire_list:
         w_img = cv2.imread(os.path.join(args.wire_dir,w),cv2.IMREAD_GRAYSCALE)
 
