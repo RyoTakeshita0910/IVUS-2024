@@ -112,4 +112,5 @@ python make_roc_IVUS.py --eval_csv ~/path/prediction/lipid rate/csv --gt_csv ~/p
 |AUC|0.906...||
 
 
+# analysis：正解と予測の相関関係や同等性を評価するために用いるプログラム
 

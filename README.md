@@ -15,6 +15,8 @@ pip install -r requirements.txt
 ```
 
 ## 前処理
+学習の前段階で行う画像の処理：データの抜き出しやマスク画像の生成
+<br>
 
 ## 推論(Inference)
 上から順に実行してください
