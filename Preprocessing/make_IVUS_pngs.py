@@ -105,7 +105,7 @@ def main():
                     out_flag = True
                     print('DICOM',dcm_path)
 
-
+        # print("plist",dcm_plist)
         if len(dcm_plist) == 0:
             for i in range(3):
                 csv_row.append('')
@@ -124,20 +124,24 @@ def main():
                 csv_row.append(str(fps))
                 csv_row.append(str(numFrames))
 
-            
+                print(numFrames)
                 imgMono = ds.pixel_array
                 dup_flag = False
-                for i in range(imgMono.shape[0]):
-                    img = Image.fromarray(imgMono[i])
+                if numFrames == 0:
+                    img = Image.fromarray(imgMono)
+                    img.save(os.path.join(pngs_path,'000000.png'))
+                else:
+                    for i in range(imgMono.shape[0]):
+                        img = Image.fromarray(imgMono[i])
 
-                    if not os.path.isfile(os.path.join(pngs_path,'{:06}.png'.format(i+1))):
-                        img.save(os.path.join(pngs_path,'{:06}.png'.format(i+1)))
-                    else:
-                        dup_flag = True
-                
-                if dup_flag:
-                    dup_flag = False
-                    comment += 'Duplication pngs '
+                        if not os.path.isfile(os.path.join(pngs_path,'{:06}.png'.format(i+1))):
+                            img.save(os.path.join(pngs_path,'{:06}.png'.format(i+1)))
+                        else:
+                            dup_flag = True
+                    
+                    if dup_flag:
+                        dup_flag = False
+                        comment += 'Duplication pngs '
             
             elif len(dcm_plist) > 1:
                 dicomName_list = []
@@ -193,7 +197,10 @@ def main():
                             comment += 'Duplication IB '
 
                     if len(dcm_plist) == 1:
-                        input_img = Image.fromarray(imgMono[gt_num])
+                        if numFrames == 0:
+                            input_img = Image.fromarray(imgMono)
+                        else:
+                            input_img = Image.fromarray(imgMono[gt_num])
                         if not os.path.isfile(os.path.join(input_dir,imgname)):
                             input_img.save(os.path.join(input_dir,imgname))
                         else:
