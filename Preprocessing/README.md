@@ -68,6 +68,10 @@ dest_dir
 └── (csv_name).csv (DICOMの情報をまとめたcsv)
 
 ```
+### IVUS画像から無駄の文字を消すプログラム(remake_IVUS_pngs.py)
+
+----
+
 
 ## 医師のアノテーション画像からLumen,Media,Wireのマスク画像を生成する(make_gt_IVUS.py)
 
