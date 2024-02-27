@@ -9,4 +9,6 @@
 
 
 ## 症例のすべてのマスク画像の輪郭を3次元でプロットしたgifを生成する：plot_3d_mask_IVUS.py
+
+### 結果例
 <img src=https://github.com/RyoTakeshita0910/IVUS-2024/assets/104045526/f363c816-af23-432c-9415-6f0362ac5507.gif width="500" >
