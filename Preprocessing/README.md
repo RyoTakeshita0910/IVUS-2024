@@ -68,7 +68,7 @@ dest_dir
 └── (csv_name).csv (DICOMの情報をまとめたcsv)
 
 ```
-### IVUS画像から無駄の文字を消すプログラム(remake_IVUS_pngs.py)
+### IVUS画像から無駄な文字を消すプログラム(remake_IVUS_pngs.py)
 
 ----
 
