@@ -5,6 +5,8 @@
 
 
 ## 脂質プラークの割合に関する正解と予測の同等性の評価：make_bap_lipid_IBIVUS.py
+### 結果例
+![Lipid_rate_Lipid_Nested8_best_fold4](https://github.com/RyoTakeshita0910/IVUS-2024/assets/104045526/74f2ae93-ebd6-4542-a1e9-1c611cdf8a9d)
 
 
 ### 
@@ -20,3 +22,8 @@
 ### 
 
 ## 各プラークの面積に関する正解と予測の同等性の評価：make_bap_plaque_IBIVUS.py
+### 結果例
+![Plaque_area_Nested8_best_fold4_blue](https://github.com/RyoTakeshita0910/IVUS-2024/assets/104045526/ad802198-f932-4026-a2e6-5d7a45b108a3)
+
+
+
